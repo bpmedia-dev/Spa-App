@@ -7,7 +7,11 @@ This app was built on twitch. See videos [here](#).
 This entire app is made using Jetpack Compose. The whole idea was to get a bit more familiar with it by building a new app.
 
 ## Architecture Pattern
-Using MVVM because that is the standard. There is also use of Hilt (if I did things right).
+Using MVVM because that is the standard. ~There is also use of Hilt (if I did things right).~
+
+
+## Other Notes
+This use of Hilt isn't completely right. It works for this example but not what I suggest one use long term.
 
 ## Nice to haves
 - appts in order with today on top

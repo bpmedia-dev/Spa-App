@@ -19,6 +19,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.twitchjuly.model.ServiceModel
 import com.example.twitchjuly.ui.theme.TwitchJulyTheme
+import com.example.twitchjuly.viewmodels.AppointmentViewModel
+import com.example.twitchjuly.viewmodels.ServiceViewModel
 import com.example.twitchjuly.views.AppointmentsScreen
 import com.example.twitchjuly.views.DummyScreen
 import com.example.twitchjuly.views.ServiceDetailsScreen
