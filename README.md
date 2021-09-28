@@ -3,6 +3,12 @@ This app was built on twitch. See videos [here](#).
 
 *!One week is missing due to a technical error*
 
+## To Note
+This entire app is made using Jetpack Compose. The whole idea was to get a bit more familiar with it by building a new app.
+
+## Architecture Pattern
+Using MVVM because that is the standard. There is also use of Hilt (if I did things right).
+
 ## Nice to haves
 - appts in order with today on top
 - click item from apts to cancel
