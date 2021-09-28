@@ -5,6 +5,12 @@ data class AppointmentModel(
     val serviceAddress: String,
     val serviceTime: String,
     val serviceDate: String,
-    val interval: String, // TODO: Def an enum
+    val interval: TimeSlots,
     val isPast: Boolean
 )
+
+enum class TimeSlots (val value: String) {
+    THREEMINUTES("3"),
+    THIRTYMINUTES("30"),
+    SIXTYMINUTES("60")
+}

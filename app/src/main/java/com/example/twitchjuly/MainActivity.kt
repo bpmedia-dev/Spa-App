@@ -23,7 +23,9 @@ import com.example.twitchjuly.views.AppointmentsScreen
 import com.example.twitchjuly.views.DummyScreen
 import com.example.twitchjuly.views.ServiceDetailsScreen
 import com.example.twitchjuly.views.ServicesScreen
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +48,7 @@ fun Main() {
         topBar = {
             TitleBar(navController, bottomNavigationItems)
         },
-            content = { MainNavHost(navController) },
+        content = { MainNavHost(navController) },
         bottomBar = {
             BottomNav(navController, bottomNavigationItems)
         }

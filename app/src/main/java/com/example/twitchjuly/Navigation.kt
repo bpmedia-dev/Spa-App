@@ -5,11 +5,11 @@ import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.navArgument
+import androidx.navigation.navArgument
 import com.example.twitchjuly.model.AppointmentModel
 import com.example.twitchjuly.model.ServiceModel
+import com.example.twitchjuly.model.TimeSlots
 import com.example.twitchjuly.views.AppointmentsScreen
-import com.example.twitchjuly.views.DummyScreen
 import com.example.twitchjuly.views.ServiceDetailsScreen
 import com.example.twitchjuly.views.ServicesScreen
 
@@ -52,7 +52,7 @@ fun MainNavHost(navController: NavHostController) {
             serviceAddress = "123 Broadway Ave, Nashville, TN 12345",
             serviceDate = "16.8.21",
             serviceTime = "6:30 CST",
-            interval = "25",
+            interval = TimeSlots.THIRTYMINUTES,
             isPast = true
         ),
         AppointmentModel(
@@ -60,7 +60,7 @@ fun MainNavHost(navController: NavHostController) {
             serviceAddress = "123 Broadway Ave, Nashville, TN 12345",
             serviceDate = "18.8.21",
             serviceTime = "6:30 CST",
-            interval = "25",
+            interval = TimeSlots.THIRTYMINUTES,
             isPast = false
         ),
         AppointmentModel(
@@ -68,7 +68,7 @@ fun MainNavHost(navController: NavHostController) {
             serviceAddress = "123 Broadway Ave, Nashville, TN 12345",
             serviceDate = "19.8.21",
             serviceTime = "6:30 CST",
-            interval = "25",
+            interval = TimeSlots.THIRTYMINUTES,
             isPast = false
         )
     )
@@ -78,7 +78,7 @@ fun MainNavHost(navController: NavHostController) {
             serviceAddress = "123 Broadway Ave, Nashville, TN 12345",
             serviceDate = "16.8.21",
             serviceTime = "6:30 CST",
-            interval = "25",
+            interval = TimeSlots.THIRTYMINUTES,
             isPast = true
         ),
         AppointmentModel(
@@ -86,7 +86,7 @@ fun MainNavHost(navController: NavHostController) {
             serviceAddress = "123 Broadway Ave, Nashville, TN 12345",
             serviceDate = "19.8.21",
             serviceTime = "6:30 CST",
-            interval = "25",
+            interval = TimeSlots.THIRTYMINUTES,
             isPast = false
         ),
     )
